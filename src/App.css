@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgba(235, 231, 231, 0.61);
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: aqua;
+  display: none;
+}

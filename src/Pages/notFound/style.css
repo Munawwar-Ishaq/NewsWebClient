@@ -1,0 +1,30 @@
+.not-found{
+    width: 100%;
+    height: calc(100vh - 170px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(white , rgb(201, 198, 198) , aqua);
+}
+.not-found h2{
+    font-size: 30px;
+    color: rgb(46, 45, 45);
+}
+.not-found button{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: rgb(54, 50, 50);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    cursor: pointer;
+    -o-border-radius: 4px;
+}
+.not-found button:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+}

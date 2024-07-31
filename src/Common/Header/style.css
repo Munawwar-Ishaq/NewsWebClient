@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap");
+
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7px;
+}
+.head h2 {
+  font-size: 40px;
+  color: rgb(71, 65, 65);
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.head img {
+  height: 100px;
+  background-color: rgb(71, 65, 65);
+  border-left: 20px solid grey;
+  user-select: none;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.bar {
+  font-size: 24px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+.navs {
+  display: flex;
+  margin-left: 30px;
+
+  user-select: none;
+  z-index: 2;
+}
+.navs li {
+  list-style: none;
+  /*justify-content: center;
+  */
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.navs li:hover {
+  background-color: rgb(175, 130, 4);
+}
+.activetab {
+  background-color: rgb(57, 212, 57);
+}
+.activetab a {
+  color: black !important;
+  font-weight: 600;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+}
+.navs li a {
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+}
+.search {
+  width: 250px;
+  height: 50px;
+  background-color: rgb(57, 212, 57);
+  margin-right: 50px;
+  position: relative;
+  display: flex;
+}
+.search input {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  color: white;
+  font-size: 17px;
+}
+.search span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: 12px;
+  color: rgba(0, 255, 255, 0.479);
+}
+.searchicon {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barnav {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .head img {
+    display: none;
+  }
+  .head {
+    height: 100px;
+  }
+  .head h2 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .bar {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    position: relative !important;
+  }
+  .search {
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+  }
+  .navs {
+    flex-direction: column;
+    margin-left: 0px;
+    /* margin-top: 10px; */
+    padding: 10px 0px;
+    overflow: hidden;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+  }
+  .navs li a {
+    justify-content: center;
+  }
+}

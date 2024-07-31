@@ -1,0 +1,39 @@
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(15, 14, 14);
+    position: relative;
+}
+
+.footer-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: fit-content;
+}
+.footer-side h2{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: fit-content;
+}
+.footer-side p{
+    font-size: 18px;
+    color: rgb(78, 76, 76);
+    font-weight: 400;
+    margin-left: 20px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-website{
+    width: 100%;
+    text-align: center;
+    color: rgb(204, 163, 163);
+    font-weight: 300;
+}

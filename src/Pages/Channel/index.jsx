@@ -8,7 +8,14 @@ function Channel() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/top-headlines/sources?apiKey=${process.env.REACT_APP_API_KEY}`)
+      .get(`${process.env.REACT_APP_API_URL}/top-headlines/sources`,{
+      params: {
+            apiKey: process.env.REACT_APP_API_KEY,
+          },
+          headers: {
+            'Content-Type': 'application/json',
+          },
+      })
       .then((res) => {
         setChannelData(res.data.sources);
         setLoading(false);
